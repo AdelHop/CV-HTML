@@ -7,33 +7,51 @@
   background-color: #ffffff;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
-.main_description {
-  margin: 20px 40px 20px 40px;
-  padding: 40px 10px 5px 1px;
-  justify-content: center;
-  text-align: justify;
-}
-.title_description {
-  margin: 0px 40px 10px 40px;
-  padding: 0px 10px 0px 1px;
-}
-.list_description {
-  margin: 0px 40px 10px 40px;
-  padding: 0px 10px 0px 1px;
-  justify-content: center;
-  text-align: justify;
-}
-
-.subtitle_description {
-  margin: 0px 40px 10px 40px;
-  padding: 0px 10px 0px 1px;
-  justify-content: center;
-  text-align: justify;
-}
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f5f7fa;
 }
-.description {
-  color: blueviolet;
+aside {
+  width: 370px;
+  background: #1e2939;
+}
+.cv-photo {
+  margin-top: 25px;
+}
+.head_secondary {
+  color: #ffffff;
+}
+.contacts_link {
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.bold {
+  font-weight: 700;
+}
+
+.list_secondary {
+  color: rgb(121, 163, 226);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style-position: inside;
+}
+.list_secondary_item {
+  color: #ffffff;
+}
+.contact-blok {
+  margin-top: 51px;
+  margin-left: 40px;
+}
+
+.list_blok {
+  margin-top: 47px;
+  margin-left: 40px;
 }
