@@ -58,3 +58,80 @@ aside {
 main {
   padding: 40px 88px 40px 88px;
 }
+.main_description {
+  width: 650px;
+  padding-bottom: 10px;
+}
+.job_title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+}
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+}
+.projects {
+  width: 650px;
+  height: 107px;
+  left: 498px;
+  top: 412px;
+  margin-bottom: 51px;
+}
+
+.list_primary {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  padding-left: 0px;
+  list-style-position: inside;
+}
+
+.list_primary_item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  text-decoration: none;
+}
+.head_primary {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.job_name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.highlight {
+  color: rgb(121, 163, 226);
+}
+
+.job_date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin-top: 0px;
+}
+.job_list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  padding-left: 0px;
+  list-style-position: inside;
+}
