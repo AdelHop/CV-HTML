@@ -12,6 +12,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#toggle-experiences").click(function () {
+          $("#experiences").toggleClass("hidden");
+        });
+
+        $("#toggle-head_primary_experiences").click(function () {
+          $(".head_primary_experiences").toggle();
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -39,25 +51,14 @@
         <div class="list_blok">
           <h2 class="head_secondary">TECH SKILLS</h2>
           <ul class="list_secondary">
-            <li>
-              <span class="list_secondary_item">Manual Testing</span>
-            </li>
+            <li><span class="list_secondary_item">Manual Testing</span></li>
             <li><span class="list_secondary_item">Test plan</span></li>
             <li><span class="list_secondary_item">Test case</span></li>
             <li><span class="list_secondary_item">Test scenario</span></li>
             <li><span class="list_secondary_item">Bug report</span></li>
-            <li>
-              <span class="list_secondary_item">Python ..........</span
-              ><progress id="file" value="40" max="100">40%</progress>
-            </li>
-            <li>
-              <span class="list_secondary_item">SQL ..................</span
-              ><progress id="file" value="40" max="100">40%</progress>
-            </li>
-            <li>
-              <span class="list_secondary_item">HTML / CSS </span>
-              <progress id="file" value="40" max="100">40%</progress>
-            </li>
+            <li><span class="list_secondary_item">Python (basics)</span></li>
+            <li><span class="list_secondary_item">SQL</span></li>
+            <li><span class="list_secondary_item">HTML / CSS</span></li>
           </ul>
         </div>
         <div class="list_blok">
@@ -161,141 +162,132 @@
           </ol>
         </div>
         <div>
-          <h2 class="head_primary">EXPERIENCES</h2>
+          <h2 class="head_primary_experiences">EXPERIENCES</h2>
+          <button id="toggle-head_primary_experiences">
+            Hide/Show Experiences
+          </button>
 
           <h3 class="job_name">
             DataConsult S.A. - <span class="highlight">Manual Tester</span>
           </h3>
-
+          <button id="toggle-experiences">Show Experiences</button>
           <p class="job_date">11.2021 - Currently</p>
-          <details>
-            <summary>Show more information</summary>
-            <ul class="job_list">
-              <li>manual testing of WMS desktop and Android applications</li>
-              <li>
-                testing of implemented services and functionalities before
-                production deployment
-              </li>
-              <li>automatic testsing in TestComplete</li>
-              <li>performing test cases / test scenario</li>
-              <li>reporting bugs in JIRA</li>
-              <li>Maintenance of system documentation</li>
-              <li>Preparing presentation environments</li>
-              <li>support Sales and Support department</li>
-              <li>work in the SCRAM methodology</li>
-            </ul>
-          </details>
+          <div id="experiences" class="hidden">
+            <section id="experiences" class="hidden">
+              <ul class="job_list">
+                <li>manual testing of WMS desktop and Android applications</li>
+                <li>
+                  testing of implemented services and functionalities before
+                  production deployment
+                </li>
+                <li>automatic testsing in TestComplete</li>
+                <li>performing test cases / test scenario</li>
+                <li>reporting bugs in JIRA</li>
+                <li>Maintenance of system documentation</li>
+                <li>Preparing presentation environments</li>
+                <li>support Sales and Support department</li>
+                <li>work in the SCRAM methodology</li>
+              </ul>
+            </section>
+          </div>
           <h3 class="job_name">
             KOPHOUSE Adela Hopek -
             <span class="highlight">Property manager</span>
           </h3>
           <p class="job_date">02.2017 - 01.2021</p>
-          <details>
-            <summary>Show more information</summary>
-            <ul class="job_list">
-              <li>property care and management (24h / 7 days)</li>
-              <li>
-                representation of the owner's interests to communities, utility
-                suppliers, tenants or potential buyers
-              </li>
-              <li>preparation of documentation (sale, rental)</li>
-              <li>preparation of reports for property owners</li>
-              <li>
-                support for external management systems, including
-                systemobsluginajmu.pl
-              </li>
-            </ul>
-          </details>
+          <ul class="job_list">
+            <li>property care and management (24h / 7 days)</li>
+            <li>
+              representation of the owner's interests to communities, utility
+              suppliers, tenants or potential buyers
+            </li>
+            <li>preparation of documentation (sale, rental)</li>
+            <li>preparation of reports for property owners</li>
+            <li>
+              support for external management systems, including
+              systemobsluginajmu.pl
+            </li>
+          </ul>
+
           <h3 class="job_name">
             HELTON real estate support -
             <span class="highlight">Real estate specialist </span>
           </h3>
           <p class="job_date">02.2016 - 01.2021</p>
-          <details>
-            <summary>Show more information</summary>
-            <ul class="job_list">
-              <li>acquiring real estate for sale and rent</li>
-              <li>
-                preparing an offer and conducting real estate presentations
-              </li>
-              <li>conducting negotiations</li>
-              <li>maintaining permanent and good relations with customers</li>
-              <li>
-                creating professional photos, videos, plans and descriptions of
-                the real estate
-              </li>
-            </ul>
-          </details>
+          <ul class="job_list">
+            <li>acquiring real estate for sale and rent</li>
+            <li>preparing an offer and conducting real estate presentations</li>
+            <li>conducting negotiations</li>
+            <li>maintaining permanent and good relations with customers</li>
+            <li>
+              creating professional photos, videos, plans and descriptions of
+              the real estate
+            </li>
+          </ul>
+
           <h3 class="job_name">
             Instytut Medycyny Innowacyjnej Sp. z o.o. -
             <span class="highlight">Medical Center Manager </span>
           </h3>
           <p class="job_date">09.2015-12.2015</p>
-          <details>
-            <summary>Show more information</summary>
-            <ul class="job_list">
-              <li>development and implementation of a marketing strategy</li>
-              <li>
-                preparation and development of the medical services sales offer
-              </li>
-              <li>promoting of the center and services</li>
-              <li>preparing content for current website updates</li>
-              <li>
-                maintaining contacts with the media and advertising agencies
-              </li>
-              <li>staff recruitment, preparation of contracts</li>
-              <li>preparation of periodic statements</li>
-            </ul>
-          </details>
+          <ul class="job_list">
+            <li>development and implementation of a marketing strategy</li>
+            <li>
+              preparation and development of the medical services sales offer
+            </li>
+            <li>promoting of the center and services</li>
+            <li>preparing content for current website updates</li>
+            <li>
+              maintaining contacts with the media and advertising agencies
+            </li>
+            <li>staff recruitment, preparation of contracts</li>
+            <li>preparation of periodic statements</li>
+          </ul>
+
           <h3 class="job_name">
             ECO NATURA Sp. z o.o - <span class="highlight">Sales manager</span>
           </h3>
           <p class="job_date">06.2014-09.2015</p>
-          <details>
-            <summary>Show more information</summary>
-            <ul class="job_list">
-              <li>comprehensive administrative service</li>
-              <li>
-                participation in the development of the risk policy for the
-                product
-              </li>
-              <li>
-                monitoring and the analysis of the market situation and
-                competitors activities
-              </li>
-              <li>
-                strengthening the company position on the market, brand success
-                and image shaping
-              </li>
-              <li>
-                creating short-term and long-term action strategies and sales
-                plans and ensuring their effective implementation
-              </li>
-              <li>
-                active acquisition of customers and new sales channels as well
-                as building B2B relationships
-              </li>
-              <li>
-                co-organization of the company's participation in trade fairs
-              </li>
-            </ul>
-          </details>
+          <ul class="job_list">
+            <li>comprehensive administrative service</li>
+            <li>
+              participation in the development of the risk policy for the
+              product
+            </li>
+            <li>
+              monitoring and the analysis of the market situation and
+              competitors activities
+            </li>
+            <li>
+              strengthening the company position on the market, brand success
+              and image shaping
+            </li>
+            <li>
+              creating short-term and long-term action strategies and sales
+              plans and ensuring their effective implementation
+            </li>
+            <li>
+              active acquisition of customers and new sales channels as well as
+              building B2B relationships
+            </li>
+            <li>
+              co-organization of the company's participation in trade fairs
+            </li>
+          </ul>
+
           <h3 class="job_name">
             Elektronicznie.pl -<span class="highlight">Technical Support</span>
           </h3>
           <p class="job_date">06.2013 - 04.2014</p>
-          <details>
-            <summary>Show more information</summary>
-            <ul class="job_list">
-              <li>running the Yacht Admin project</li>
-              <li>
-                designing and administration of rejsyiszkolenia.pl moving
-                exploratory tests
-              </li>
-              <li>conducting presentations and training</li>
-              <li>supporting for system users</li>
-            </ul>
-          </details>
+          <ul class="job_list">
+            <li>running the Yacht Admin project</li>
+            <li>
+              designing and administration of rejsyiszkolenia.pl moving
+              exploratory tests
+            </li>
+            <li>conducting presentations and training</li>
+            <li>supporting for system users</li>
+          </ul>
         </div>
         <div>
           <h2 class="head_primary">EDUCATION</h2>
